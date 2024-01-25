@@ -1,5 +1,5 @@
 class ForumThreadsController < ApplicationController
-  # before_action :authorized, only: [:create, :update, :destroy]
+  before_action :authorized, only: [:create, :update, :destroy]
   before_action :set_forum_thread, only: %i[ show update destroy ]
 
   # GET /forum_threads
