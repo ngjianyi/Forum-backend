@@ -6,7 +6,7 @@ class AuthController < ApplicationController
         if @user && @user.authenticate(params[:password])
             token = encode_token({user_id: @user.id})
             cookies.signed[:jwt] = {value: token, httponly: true, expires: 1.hour.from_now}
-            render json: {user_id: @user.id, username: @user.username}
+            render json: {user_id: @user.id, username: @user.username, token: token}
         else
             render json: @user.errors, status: :unauthorized
         end
