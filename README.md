@@ -1,24 +1,19 @@
-# README
+# CVWO Assignment Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Running the app
 
-Things you may want to cover:
+1. Open your terminal and navigate to the directory containing your cloned project.
+1. Install dependencies for the project by entering this command:
 
-* Ruby version
+```bash
+bundle install
+```
 
-* System dependencies
+3. Run the app in development mode by entering this command:
 
-* Configuration
+```bash
+rails s -p 4000
+```
 
-* Database creation
+4. Open [http://localhost:3000](http://localhost:4000) to view it in the browser.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
